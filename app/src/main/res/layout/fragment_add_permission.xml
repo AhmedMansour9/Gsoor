@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.gsoor.admin.ui.home.HomeAdminViewModel" />
+
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/dark_green"
+            android:alpha=".3"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <ImageView
+            android:id="@+id/Img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Img_logo"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/Card"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add_permisson"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_18sdp"
+                    android:id="@+id/T_Permission"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Card"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/role"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="text"
+                        android:layout_marginBottom="-8dp"
+                        android:id="@+id/E_Role"
+                        android:background="@drawable/bc_edittext"
+                        android:singleLine="true"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:hint="@string/role"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/Rela1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:onClick="@{()->viewModel.navigator.onClickRela1()}"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox1"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/datamanger"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela2"
+                    android:onClick="@{()->viewModel.navigator.onClickRela2()}"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox2"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/mangercontrol"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela3"
+                    android:onClick="@{()->viewModel.navigator.onClickRela3()}"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox3"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/mangerrole"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela4"
+                    android:onClick="@{()->viewModel.navigator.onClickRela4()}"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox4"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/addections"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela5"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox5"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/addservices"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela6"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox6"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/mangeraccountsservice"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela7"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox7"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/mangeraccounts"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela8"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox8"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/reportsapp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela9"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox9"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/policyapp"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela10"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox10"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/datacontact"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/Rela11"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:background="@color/grey"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/CheckBox11"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/grey"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_black"
+                            android:text="@string/purchaseapps"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSave"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="@string/save"
+                    android:backgroundTint="@color/green"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="20dp" />
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

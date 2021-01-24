@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Gsoor</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="finish">Finish</string>
+    <string name="f_text">Welcome in gsoor application \n Your services are in your hands</string>
+    <string name="second_txt">All services in one app, we can connect you with what you want</string>
+    <string name="third_txt">Gsoor application \n Trust, safety, credibility</string>
+    <string name="login">Login</string>
+    <string name="welcome_login">Gsoor app \n Login now</string>
+    <string name="choose_account">Choose your account type</string>
+    <string name="login_service">Service provider</string>
+    <string name="user_logiin">Login User</string>
+    <string name="choose_lang">Please choose your language</string>
+    <string name="welcome">Welcome in Gsoor Application</string>
+    <string name="loginuser">Login as user</string>
+    <string name="loginprovider">Login as Service provider</string>
+    <string name="loginadmin">Login as admin</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Login</string>
+    <string name="user_name">UserName</string>
+    <string name="password">Password</string>
+    <string name="forgetpas">Forget your password ?</string>
+    <string name="from_here">From here</string>
+    <string name="new_Account">Register new account ?</string>
+    <string name="error">Error!</string>
+    <string name="sorry">Sorry!</string>
+    <string name="nointernet">No Internet Connection</string>
+    <string name="refresh">Refresh</string>
+    <string name="email">Email</string>
+    <string name="datamanger">General data management</string>
+    <string name="mangercontrol">Administrator Control Panel</string>
+    <string name="mangerrole">Mangers roles control panel</string>
+    <string name="addections">Add main sections &amp; sub services</string>
+    <string name="addservices">Add sub services</string>
+    <string name="mangeraccountsservice">Manage service providers accounts</string>
+    <string name="mangeraccounts">Manage member accounts</string>
+    <string name="reportsapp">Manage application reports</string>
+    <string name="policyapp">Application policy application</string>
+    <string name="datacontact">Manage contact information</string>
+    <string name="purchaseapps">Application subscription packages</string>
+    <string name="controlpanel">Control Panel</string>
+    <string name="create">Create new account</string>
+    <string name="phone">Phone</string>
+    <string name="confirmpass">Confirm password</string>
+    <string name="new_admin">Register new admin</string>
+    <string name="validate_username">Please validate your username</string>
+    <string name="validate_phone">Please validate your phone</string>
+    <string name="validate_email">Please validate your Email</string>
+    <string name="validate_password">Please validate your password</string>
+    <string name="validate_confirmpassword">Please validate your confirm password</string>
+    <string name="validate_matchpassword">Please make sure your password is match confirmpassword</string>
+    <string name="role">Role</string>
+    <string name="success_addadmin">Admin has been added success</string>
+    <string name="add_permisson">Add permisson</string>
+    <string name="deleterole_sucess">Role has been deleted</string>
+    <string name="save">Save</string>
+    <string name="add_country">Add Country</string>
+    <string name="country">Country</string>
+    <string name="validate_perimssion">Please select at least one permission</string>
+    <string name="validate_role">Please validate your role</string>
+    <string name="success_addrole">Role has been added success</string>
+    <string name="success_editrole">Role has been  edited</string>
+    <string name="edit_role">Edit Role</string>
+    <string name="edit_country">Edit Country</string>
+    <string name="add_city">Add City</string>
+    <string name="success_addcity">City has been added success</string>
+    <string name="success_editcity">City has been added edited</string>
+    <string name="firstname">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="validate_firstname">Please validate your firstname</string>
+    <string name="validate_lastname">Please validate your lastname</string>
+    <string name="edit_manger">Edit Manger</string>
+    <string name="show_all">Show All</string>
+    <string name="mange_name">Manger Name</string>
+    <string name="deletemanger_sucess">Manger has been deleted</string>
+    <string name="add_category">Add Category</string>
+    <string name="category">Category</string>
+    <string name="deletecategory_sucess">Category has been deleted</string>
+    <string name="success_addcategory">Category has  added success</string>
+    <string name="success_editcategory">Category has been  edited</string>
+    <string name="validate_category">Please validate your category</string>
+    <string name="add_service">Add Service</string>
+    <string name="servicename">Service name</string>
+    <string name="free">Free</string>
+    <string name="paid">Paid</string>
+    <string name="validate_service">Please validate your service</string>
+    <string name="success_addservice">Service has been added success</string>
+    <string name="servicetype">Service type</string>
+    <string name="deletesubcategory_sucess">Sub Category has been deleted</string>
+    <string name="deletecity_sucess">City has been deleted</string>
+    <string name="deletecountry_sucess">Country has been deleted</string>
+    <string name="edit_sub">Edit Sub Category</string>
+    <string name="members">Members</string>
+    <string name="number_ofusers">Total Users: </string>
+    <string name="users">Users</string>
+    <string name="search">Search</string>
+    <string name="updatestatus">Update status success</string>
+    <string name="packageName">Package Name</string>
+    <string name="countOfServices">No of services</string>
+    <string name="countOfStars">Rate</string>
+    <string name="type_ofservice">Type of service</string>
+    <string name="deletepackage_sucess">Package has been deleted</string>
+    <string name="success_addpackage">Package has added success</string>
+    <string name="success_editpackage">Package has been  edited</string>
+    <string name="validate_package">Please validate your package</string>
+    <string name="validate_noservices">Please validate your no of services</string>
+    <string name="add_packagedetails">Add Package Details</string>
+    <string name="time">Time</string>
+    <string name="price">Price</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="validate_packageprice">Please validate your package price</string>
+    <string name="qty">Quantity</string>
+    <string name="policymembers"> Member\'s Policy</string>
+    <string name="policyprovider"> Member\'s Provider Service</string>
+
+    <string-array name="language">
+        <item>Language</item>
+        <item>English</item>
+        <item>عربي</item>
+
+    </string-array>
+
+
+    <string name="trusted_member">Trusted Member</string>
+    <string name="untrusted_member">Un Trusted Member</string>
+
+    <string name="approval_member">Approval Member</string>
+    <string name="refuse_member">Refuse Member</string>
+
+    <string name="accept">Accept</string>
+    <string name="block">Block</string>
+
+    <string name="trusted_members">Verify Members</string>
+    <string name="add_package">Add Package</string>
+    <string name="validate_addpackage">Please validate your package</string>
+    <string name="deletepackagedetails_sucess">Package Details has been deleted</string>
+    <string name="success_addprivacy">Privacy has been added success</string>
+    <string name="fullname">Full Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+            <variable
+                name="viewModel"
+                type="com.gsoor.admin.ui.home.HomeAdminViewModel" />
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".intro.ui.loginallusers.LoginAllUsersActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/dark_green"
+            android:alpha=".3"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <ImageView
+            android:id="@+id/Img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/Img_logout"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_logout"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentEnd="true" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Img_logo"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/Card"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/controlpanel"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_18sdp"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Card"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:id="@+id/linear"
+
+          android:layout_marginEnd="@dimen/_10sdp"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:id="@+id/Rela1"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela1()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/datamanger"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela2"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela2()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/mangercontrol"
+                      />
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela3"
+              android:onClick="@{()->viewModel.navigator.onClickRela3()}"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/mangerrole"
+                      />
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela4"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela4()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/addections"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela5"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/addservices"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela6"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela6()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/mangeraccountsservice"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela7"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela7()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/mangeraccounts"
+                      />
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela8"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/reportsapp"
+                      />
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela9"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela9()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/policyapp"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela10"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/datacontact"
+                      />
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/Rela11"
+              android:visibility="gone"
+              android:onClick="@{()->viewModel.navigator.onClickRela11()}"
+              android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@color/grey"
+                  android:layout_height="@dimen/_30sdp">
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_marginStart="@dimen/_50sdp"
+                  android:layout_height="@dimen/_30sdp">
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/dark_black"
+                      android:text="@string/purchaseapps"
+                      />
+
+
+              </RelativeLayout>
+          </RelativeLayout>
+
+
+
+
+
+      </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+</layout>

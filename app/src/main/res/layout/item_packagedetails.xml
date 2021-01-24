@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.gsoor.data.remote.model.PackageDetailsResponse.Data" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/packageName"
+                android:id="@+id/PackageTitle"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/red"
+                android:text="@={model.packageName}"
+                android:layout_toEndOf="@+id/PackageTitle"
+                android:layout_marginStart="@dimen/_20sdp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/time"
+                android:id="@+id/countOfServices"
+                android:layout_below="@+id/PackageTitle"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/red"
+                android:id="@+id/T_Time"
+                android:layout_below="@+id/PackageTitle"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/PackageTitle"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/price"
+                android:id="@+id/type_ofservice"
+                android:layout_below="@+id/countOfServices"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_below="@+id/countOfServices"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/T_Price"
+                android:layout_toEndOf="@+id/PackageTitle"
+                android:layout_marginStart="@dimen/_20sdp" />
+
+
+
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/img_delete" />
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/img_delete"
+                android:src="@drawable/ic_edit" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

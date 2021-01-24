@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loginViewModel"
+            type="com.gsoor.admin.ui.registeradmin.RegisterAdminViewModel" />
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".intro.ui.loginallusers.LoginAllUsersActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/dark_green"
+            android:alpha=".3"
+            android:id="@+id/Rela"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <ImageView
+            android:id="@+id/Img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonaddCity"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_service"
+            android:layout_below="@+id/Img_logo"
+            android:backgroundTint="@color/green"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/T_SubName"
+            android:textColor="@color/black"
+             android:layout_below="@+id/buttonaddCity"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/SwipRoles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/T_SubName"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_Roles"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ss"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:scrollbars="horizontal"  />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    </RelativeLayout>
+</layout>

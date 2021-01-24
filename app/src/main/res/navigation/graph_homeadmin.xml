@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_home"
+    app:startDestination="@id/homeFragment">
+
+    <!--    <navigation android:id="@+id/navigation2"-->
+    <!--        app:startDestination="@id/homeFragment">-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gsoor.admin.ui.home.HomeAdminFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home_admin" >
+        <action
+            android:id="@+id/action_homeFragment_to_registerAdminFragment"
+            app:destination="@id/registerAdminFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rolesFragment"
+            app:destination="@id/rolesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_countriesFragment"
+            app:destination="@id/countriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_membersAccountFragment"
+            app:destination="@id/membersAccountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_packagesFragment"
+            app:destination="@id/packagesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_privacy"
+            app:destination="@id/privacy" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerAdminFragment"
+        android:name="com.gsoor.admin.ui.registeradmin.RegisterAdminFragment"
+        android:label="RegisterAdminFragment" >
+        <action
+            android:id="@+id/action_registerAdminFragment_to_allMangersFragment"
+            app:destination="@id/allMangersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rolesFragment"
+        android:name="com.gsoor.admin.ui.roles.RolesFragment"
+        android:label="RolesFragment" >
+        <action
+            android:id="@+id/action_rolesFragment_to_addPermissionFragment"
+            app:destination="@id/addPermissionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPermissionFragment"
+        android:name="com.gsoor.admin.ui.addpermission.AddPermissionFragment"
+        android:label="AddPermissionFragment" />
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.gsoor.admin.ui.countries.CountriesFragment"
+        android:label="CountriesFragment" >
+        <action
+            android:id="@+id/action_countriesFragment_to_citiesFragment"
+            app:destination="@id/citiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/citiesFragment"
+        android:name="com.gsoor.admin.ui.cities.CitiesFragment"
+        android:label="fragment_cities"
+        tools:layout="@layout/fragment_cities" />
+    <fragment
+        android:id="@+id/allMangersFragment"
+        android:name="com.gsoor.admin.ui.allmangers.AllMangersFragment"
+        android:label="AllMangersFragment" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.gsoor.admin.ui.categories.CategoriesFragment"
+        android:label="CategoriesFragment" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_subCategoriesFragment"
+            app:destination="@id/subCategoriesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addCategoryFragment"
+        android:name="com.gsoor.admin.ui.acccategory.AddCategoryFragment"
+        android:label="AddCategoryFragment" />
+    <fragment
+        android:id="@+id/subCategoriesFragment"
+        android:name="com.gsoor.admin.ui.subcategories.SubCategoriesFragment"
+        android:label="SubCategoriesFragment" />
+    <fragment
+        android:id="@+id/membersAccountFragment"
+        android:name="com.gsoor.admin.ui.members.MembersAccountFragment"
+        android:label="MembersAccountFragment" />
+    <fragment
+        android:id="@+id/packagesFragment"
+        android:name="com.gsoor.admin.ui.packadges.PackagesFragment"
+        android:label="PackagesFragment" >
+        <action
+            android:id="@+id/action_packagesFragment_to_packageDetailsFragment"
+            app:destination="@id/packageDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/packageDetailsFragment"
+        android:name="com.gsoor.admin.ui.packagedetails.PackageDetailsFragment"
+        android:label="PackageDetailsFragment" />
+    <fragment
+        android:id="@+id/privacy"
+        android:name="com.gsoor.admin.ui.privacy.Privacy"
+        android:label="Privacy" >
+        <action
+            android:id="@+id/action_privacy_to_privacyMembersFragment"
+            app:destination="@id/privacyMembersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyMembersFragment"
+        android:name="com.gsoor.admin.ui.privacymembers.PrivacyMembersFragment"
+        android:label="fragment_privacy_members"
+        tools:layout="@layout/fragment_privacy_members" />
+
+
+</navigation>

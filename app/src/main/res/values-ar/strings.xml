@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">جسور</string>
+    <string name="next">التالي</string>
+    <string name="skip">نخطي</string>
+    <string name="finish">انتهي</string>
+    <string name="f_text">مرحبا بك في تطبيق جسور \n خدماتك بين يديك</string>
+    <string name="second_txt">كل خدماتك في تطبيق واحد \n نصلك بأمان بما تريد</string>
+    <string name="third_txt">تطبيق جسور \n  ثقة امان مصداقية</string>
+    <string name="login">تسجيل</string>
+    <string name="welcome_login">تطبيق جسور \n سجل دخولك الان</string>
+    <string name="choose_account">حدد نوع الدخول لحسابك</string>
+    <string name="login_service">مقدم الخدمة</string>
+    <string name="user_logiin">مستفيد من الخدمة</string>
+    <string name="choose_lang">من فضلك اختار اللغة</string>
+    <string name="welcome">مرحبا بك في تطبيق جسور</string>
+    <string name="loginuser">دخول المستخدم</string>
+    <string name="loginprovider">دخول مقدم الخدمة</string>
+    <string name="loginadmin">لوحة التحكم</string>
+    <string name="register">تسجيل جديد</string>
+    <string name="sign_in">تسجيل دخول</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+
+    <string name="forgetpas">هل نسيت كلمة السر ؟</string>
+    <string name="from_here">من هنا </string>
+    <string name="new_Account">تسجيل حساب جديد ؟</string>
+    <string name="error">خطأ</string>
+    <string name="sorry">نأسف!</string>
+    <string name="nointernet">لا يوجد اتصال إنترنت</string>
+    <string name="refresh">اعادة تحميل</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="datamanger">ادارة البيانات العامة</string>
+    <string name="mangercontrol">لوحة تحكم المدير</string>
+    <string name="mangerrole">لوحة صلاحيات المدراء</string>
+    <string name="addections">اضافة الاقسام الرئيسية والفرعية</string>
+    <string name="addservices">اضافة الخدمات الفرعية</string>
+    <string name="mangeraccountsservice">ادارة حسابي مقدمي الخدمة</string>
+    <string name="mangeraccounts">ادارة حسابات الاعضاء</string>
+    <string name="reportsapp">ادارة تقارير التطبيق</string>
+    <string name="policyapp">ادارة سياسة التطبيق</string>
+    <string name="datacontact">ادارة معلومات التواصل</string>
+    <string name="purchaseapps">باقات اشتراك التطبيق</string>
+    <string name="controlpanel">لوحة تحكم</string>
+    <string name="create">انشاء حساب جديد</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="confirmpass">تأكيد الرقم السري</string>
+    <string name="new_admin">اضافة مدير جديد</string>
+    <string name="validate_username">من فضلك تأكد من الاسم </string>
+    <string name="validate_phone">من رفضلك تأكد من ادخال الرقم الجوال</string>
+    <string name="validate_email">من فضلك تأكد من ادخال البريد الالكتروني</string>
+    <string name="validate_password">من فضلك تأكد من الرقم السري</string>
+    <string name="validate_confirmpassword">من فضلك تاكد من ادخال تأكيد الرقم السري</string>
+    <string name="validate_matchpassword">من فضلك تأكد ان الرقم السري يتساوي مع تأكيد الرقم السري</string>
+    <string name="role">الصلاحية</string>
+    <string name="success_addadmin">تم اضافة المدير بنجاح</string>
+    <string name="add_permisson">اضف صلاحية</string>
+    <string name="deleterole_sucess">تم حذف الصلاحية بنجاح</string>
+    <string name="save">حفظ</string>
+    <string name="add_country">اضف بلد</string>
+    <string name="country">البلد</string>
+    <string name="validate_perimssion">من فضلك اختر ع الاقل اذن واحد</string>
+    <string name="validate_role">من فضلك تأكد من ادخال الصلاحية</string>
+    <string name="success_addrole">تم اضافة الصلاحية بنجاح</string>
+    <string name="success_editrole">تم تعديل الصلاحية بنجاح</string>
+    <string name="edit_role">تعديل الصلاحية</string>
+    <string name="edit_country">تعديل البلد</string>
+    <string name="add_city">اضف مدينة</string>
+    <string name="success_addcity">تم اضافة المدينة بنجاح</string>
+    <string name="success_editcity">تم تعديل المدينة بنجاح</string>
+    <string name="firstname">الاسم الاول</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="validate_firstname">من فضلك تأكد من الاسم الاول</string>
+    <string name="validate_lastname">من فضلك تأكد من الاسم الاخر</string>
+    <string name="edit_manger">تعديل المدير</string>
+    <string name="show_all">عرض الكل</string>
+    <string name="mange_name">اسم المدير</string>
+    <string name="deletemanger_sucess">تم حذف المدير بنجاح</string>
+    <string name="add_category">اضف قسم رئيسي</string>
+    <string name="category">قسم رئيسي</string>
+    <string name="deletecategory_sucess">تم حذف القسم الرئيسي بنجاح</string>
+    <string name="success_addcategory">تم اضافة القسم الرئيسي بنجاح</string>
+    <string name="success_editcategory">تم تعديل القسم بنجاح</string>
+    <string name="validate_category">من فضلك تأكد من ادخال القسم </string>
+    <string name="add_service">اضف خدمة</string>
+    <string name="servicename">اسم الخدمة</string>
+    <string name="free">مجاني</string>
+    <string name="paid">مدفوع</string>
+    <string name="validate_service">من فضلك تأكد من الخدمة</string>
+    <string name="success_addservice">تم اضافة الخدمة بنجاح</string>
+    <string name="servicetype">نوع الخدمة</string>
+    <string name="deletesubcategory_sucess">تم حذف الخدمة بنجاح</string>
+    <string name="deletecity_sucess">تم حذف المدينة بنجاح</string>
+    <string name="deletecountry_sucess">تم حذف البلد بنجاح</string>
+    <string name="edit_sub">تعديل الخدمة</string>
+
+
+    <string name="trusted_member">توثيق العضوية</string>
+    <string name="untrusted_member">الغاء توثيق </string>
+
+    <string name="approval_member">اعتماد العضوية</string>
+    <string name="refuse_member">الغاء اعتماد </string>
+
+    <string name="accept">سماح العضو</string>
+    <string name="block">حظر العضو</string>
+
+    <string name="trusted_members">تفعيل وتوثيق حسابات الاعضاء</string>
+    <string name="members">اعضاء</string>
+    <string name="number_ofusers">الاجمالي </string>
+    <string name="users">اعضاء</string>
+    <string name="search">البحث</string>
+    <string name="updatestatus">تم تحديث الحالة بنجاح</string>
+
+    <string name="packageName">اسم الباقة</string>
+    <string name="countOfServices">عدد الخدمات</string>
+    <string name="countOfStars">تقييم</string>
+    <string name="type_ofservice">نوع الخدمة</string>
+    <string name="add_package">اضافة الباقة</string>
+    <string name="deletepackage_sucess">تم حذف الباقة بنجاح</string>
+    <string name="validate_addpackage">من فضلك تأكد من ادخال اسم الباقة</string>
+    <string name="success_addpackage">تم اضافة الباقة بنجاح</string>
+    <string name="success_editpackage">تم تعديل الباقة بنجاح</string>
+    <string name="validate_package">من فضلك تأكد من ادخال الباقة</string>
+    <string name="validate_noservices">من فضلك تأكد من ادخال عدد الخدمات</string>
+    <string name="add_packagedetails">اضف تفاصيل الباقة</string>
+    <string name="time">المدة</string>
+    <string name="price">السعر</string>
+    <string name="day">يوم</string>
+    <string name="month">شهر</string>
+    <string name="year">سنة</string>
+    <string name="deletepackagedetails_sucess">تم حذف تفاصيل الباقة بنجاح</string>
+    <string name="validate_packageprice">من فضلك تأكد من ادخال سعر الباقة</string>
+    <string name="qty">العدد</string>
+    <string name="policymembers">سياسة التطبيق مع الاعضاء</string>
+    <string name="policyprovider"> سياسة التطبيق مع مقدمي الخدمات</string>
+    <string name="success_addprivacy">تم اضافة السياسة بنجاح</string>
+    <string name="fullname">الاسم كامل</string>
+
+
+    <string-array name="language">
+        <item>اللغة</item>
+        <item>English</item>
+        <item>عربي</item>
+
+    </string-array>
+</resources>

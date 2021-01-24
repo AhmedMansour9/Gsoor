@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loginViewModel"
+            type="com.gsoor.admin.ui.registeradmin.RegisterAdminViewModel" />
+
+        <variable
+            name="spinnerAdapter"
+            type="android.widget.ArrayAdapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".intro.ui.loginallusers.LoginAllUsersActivity">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/green"
+            android:alpha=".3"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <ImageView
+            android:id="@+id/Img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_below="@+id/Img_logo"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/Card_login"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/new_admin"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@+id/Img_logo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:id="@+id/Card_Show"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/show_all"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_14sdp"
+                            />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/role"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/Card_login"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:inputType="text"
+                    android:layout_marginBottom="-8dp"
+                    android:id="@+id/E_Role"
+                    android:background="@drawable/bc_edittext"
+                    android:singleLine="true"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:drawableEnd="@drawable/ic_registername"
+                    android:hint="@string/role"
+                    android:textColor="#868686"
+                    android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/Card_login"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="text"
+                android:layout_marginBottom="-8dp"
+                android:id="@+id/E_FirstName"
+                android:background="@drawable/bc_edittext"
+                android:singleLine="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_registername"
+                android:hint="@string/user_name"
+                android:textColor="#868686"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/firstname"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="text"
+                        android:layout_marginBottom="-8dp"
+                        android:id="@+id/E_LastName"
+                        android:background="@drawable/bc_edittext"
+                        android:singleLine="true"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:drawableEnd="@drawable/ic_registername"
+                        android:hint="@string/fullname"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/lastname"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="number"
+                android:layout_marginBottom="-8dp"
+                android:id="@+id/E_Phone"
+                android:background="@drawable/bc_edittext"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_registerphone"
+                android:hint="@string/phone"
+                android:textColor="#868686"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/phone"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="-8dp"
+                android:id="@+id/E_Email"
+                android:background="@drawable/bc_edittext"
+                android:singleLine="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_registeremail"
+                android:hint="@string/email"
+                android:textColor="#868686"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/email"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="-8dp"
+                android:id="@+id/E_Password"
+                android:background="@drawable/bc_edittext"
+                android:drawablePadding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:gravity="end|center"
+                android:paddingEnd="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_registerpassword"
+                android:hint="@string/password"
+                android:textColor="#868686"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/password"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="-8dp"
+                android:id="@+id/E_Confirmpassword"
+                android:background="@drawable/bc_edittext"
+                android:singleLine="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="end|center"
+                android:paddingEnd="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_registerpassword"
+                android:hint="@string/confirmpass"
+                android:textColor="#868686"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/confirmpassword"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/Card_Roles"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <Spinner
+                            android:id="@+id/S_Language"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:selectedItemPosition="@={loginViewModel.itemPositionLanguage}"
+                            android:backgroundTint="@color/green"
+                            app:adapter="@{spinnerAdapter}"
+                            />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonRegister"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Card_Roles"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/login"
+                    android:backgroundTint="@color/green"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="20dp" />
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>
